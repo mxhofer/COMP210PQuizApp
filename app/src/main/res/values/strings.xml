@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JavaQuiz</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_share">Share Score</string>
+    <string name="str_next">Next</string>
+    <string name="title_activity_result">Results</string>
+    <string name="edit_message">Enter your name</string>
+    <string name="button_send">New game</string>
+    <string name="button_name">START</string>
+    <string name="menu_settings">Java on Moodle</string>
+    <string name="share_using">Share as text</string>
+    <string name="result_message">Your name: %1$s. Your score: %2$d. Ranking: .</string>
+
+</resources>
