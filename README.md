@@ -1,5 +1,5 @@
 # COMP210PQuizApp
 
-This is team Minsu, Victor and Max. Updated on 19 March, 5.30pm.
+This is team Minsu, Victor and Max.
 
-For COMP210P.
+For COMP210P @ UCL.
