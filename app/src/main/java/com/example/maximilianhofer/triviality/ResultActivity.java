@@ -30,6 +30,7 @@ public class ResultActivity extends Activity {
 
 	Button newGame;
 	Button resetLeaderboard;
+	int yourScore;
 
 	// onCreate method starts the activity
 	@Override
@@ -50,7 +51,7 @@ public class ResultActivity extends Activity {
 		//display score
 		bar.setRating(score);
 		String yourName = StartScreen.leaderboardName.get(StartScreen.leaderboardName.size() - 1);
-		int yourScore = StartScreen.leaderboardScore.get(StartScreen.leaderboardScore.size() - 1);
+		yourScore = StartScreen.leaderboardScore.get(StartScreen.leaderboardScore.size() - 1);
 
 		//set text field to tell you your name and score out of the 5 questions displayed
 		textResult.setText("Your name: " + yourName
@@ -136,7 +137,7 @@ public class ResultActivity extends Activity {
 	//share your score out of a max of 5
 	public void shareEmail(MenuItem item){
 		String shareBody = "My score is <" +
-				StartScreen.leaderboardScore.get(StartScreen.leaderboardScore.size() - 1) + "> out of 5 on the awesome Java quiz app. Get your copy in the Play Store: victorminsumax";
+				yourScore + "> out of 5 on the awesome Java quiz app. Get your copy in the Play Store: victorminsumax";
 		Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
 		sharingIntent.setType("text/plain");
 		sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
